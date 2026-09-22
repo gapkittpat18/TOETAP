@@ -1,0 +1,1 @@
+<?php require __DIR__.'/../auth/bootstrap.php'; requireUser(); http_response_code(410); exit('Disabled in TOETAP V1.6 multi-user.');

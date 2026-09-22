@@ -1,0 +1,22 @@
+# TOETAP local/private configuration
+/config/database.php
+/config/strava.php
+.env
+.env.*
+!.env.example
+
+# User-generated shoe photos
+/uploads/shoes/*
+!/uploads/shoes/.htaccess
+!/uploads/shoes/.gitkeep
+
+# Runtime / temporary files
+*.log
+*.tmp
+*.cache
+.DS_Store
+Thumbs.db
+
+# IDE / OS
+.vscode/
+.idea/

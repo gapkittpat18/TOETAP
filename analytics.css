@@ -1,0 +1,11 @@
+
+/* TapSole V0.9 analytics additions */
+.chart{display:flex;align-items:end;gap:7px;height:150px;padding-top:18px}
+.barwrap{flex:1;height:100%;display:flex;flex-direction:column;justify-content:end;align-items:center;gap:7px}
+.bar{width:100%;max-width:34px;min-height:3px;background:#eee;border-radius:8px 8px 3px 3px}
+.barlabel{font-size:9px;color:#777}
+.insight{display:flex;gap:12px;padding:14px 0;border-bottom:1px solid #29292f}.insight:last-child{border:0}
+.insighticon{width:38px;height:38px;border-radius:12px;background:#25252a;display:grid;place-items:center;flex:0 0 auto}
+.insight b{display:block;font-size:14px}.insight span{display:block;color:#8d8d96;font-size:12px;line-height:1.45;margin-top:4px}
+.rank{display:grid;grid-template-columns:34px 1fr auto;gap:10px;align-items:center;padding:12px 0;border-bottom:1px solid #29292f}.rank:last-child{border:0}
+.ranknum{width:30px;height:30px;border-radius:10px;background:#242429;display:grid;place-items:center;font-size:12px;font-weight:900}

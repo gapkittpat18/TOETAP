@@ -1,0 +1,122 @@
+
+:root{--bg:#f4f4f1;--ink:#101112;--muted:#777b7c;--card:#fff;--line:#e5e5e1;--black:#111214;--green:#c9ff54}
+*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
+body{min-height:100vh}.app{max-width:480px;margin:auto;min-height:100vh;padding:24px 18px 112px}
+a{color:inherit}.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:26px}.brand{font-weight:1000;letter-spacing:-1.3px;font-size:23px}.brand i{display:inline-block;width:9px;height:9px;background:var(--green);border-radius:50%;margin-left:3px}
+.avatar{width:42px;height:42px;background:#111;color:#fff;border-radius:50%;display:grid;place-items:center;text-decoration:none;font-weight:900}
+.kicker{font-size:11px;font-weight:900;letter-spacing:1.4px;color:#7c7f7d;text-transform:uppercase}.headline{font-size:42px;line-height:.96;letter-spacing:-2.2px;margin:6px 0 24px;max-width:350px}
+.hero{background:var(--black);color:#fff;border-radius:30px;padding:22px;box-shadow:0 20px 50px #1112;overflow:hidden;position:relative}
+.hero:after{content:"";position:absolute;width:180px;height:180px;border-radius:50%;background:var(--green);filter:blur(75px);opacity:.12;right:-50px;top:-60px}
+.ready{display:flex;align-items:center;gap:8px;font-size:10px;font-weight:900;letter-spacing:1px;color:#d8dad7}.dot{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 5px #c9ff5422}
+.shoe{height:142px;display:grid;place-items:center;position:relative}.shoeShape{font-size:86px;transform:rotate(-8deg);filter:grayscale(1)}
+.hero h2{font-size:30px;letter-spacing:-1.2px;margin:4px 0}.hero .sub{font-size:13px;color:#a9aca9}.meterTop{display:flex;justify-content:space-between;font-size:11px;color:#c2c4c1;margin-top:20px}.meter{height:5px;background:#343638;border-radius:99px;margin-top:8px;overflow:hidden}.meter b{display:block;height:100%;background:var(--green);border-radius:99px}
+.taprow{display:flex;justify-content:space-between;align-items:center;margin-top:18px;padding-top:16px;border-top:1px solid #2d2f30}.taprow span{font-size:11px;color:#aaa}.taprow b{font-size:12px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin:13px 0 28px}.stat{background:#fff;border:1px solid var(--line);border-radius:20px;padding:15px 13px}.stat small{display:block;font-size:9px;font-weight:900;letter-spacing:.8px;color:#969994}.stat b{display:block;font-size:19px;margin-top:5px;letter-spacing:-.7px}
+.section{display:flex;justify-content:space-between;align-items:end;margin:25px 2px 10px}.section h3{font-size:21px;margin:0;letter-spacing:-.6px}.section a{font-size:12px;color:#777;text-decoration:none}
+.card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:17px}
+.run{display:grid;grid-template-columns:44px 1fr auto;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid #eee}.run:last-child{border:0}.runIcon{width:44px;height:44px;border-radius:14px;background:#f0f0ed;display:grid;place-items:center;font-weight:900}.run b{display:block;font-size:14px}.run span{display:block;font-size:11px;color:#858986;margin-top:4px}.distance{text-align:right;font-size:15px;font-weight:950}.distance small{display:block;font-size:9px;color:#999}
+.insight{background:var(--green);border-radius:25px;padding:19px;margin-top:12px;display:grid;grid-template-columns:1fr auto;gap:15px;text-decoration:none}.insight .kicker{color:#4d5d25}.insight h3{font-size:23px;letter-spacing:-.9px;margin:6px 0}.arrow{width:42px;height:42px;border-radius:50%;background:#111;color:#fff;display:grid;place-items:center}
+.nav{position:fixed;z-index:10;bottom:14px;left:50%;transform:translateX(-50%);width:min(calc(100% - 24px),456px);background:#111214;border-radius:24px;padding:8px;display:grid;grid-template-columns:repeat(4,1fr);box-shadow:0 15px 45px #0004}.nav a{color:#777;text-decoration:none;text-align:center;font-size:9px;font-weight:800;padding:8px 2px;border-radius:17px}.nav a b{display:block;font-size:18px;margin-bottom:3px}.nav a.active{background:#252729;color:#fff}.nav a.active b{color:var(--green)}
+.fab{position:fixed;right:max(22px,calc((100vw - 470px)/2 + 12px));bottom:91px;width:55px;height:55px;background:var(--green);border:5px solid var(--bg);border-radius:50%;display:grid;place-items:center;text-decoration:none;font-size:25px;font-weight:500;z-index:8}
+.pageTitle{font-size:38px;letter-spacing:-1.8px;margin:5px 0 22px}.shoeCard{background:#fff;border:1px solid var(--line);border-radius:24px;padding:18px;margin-bottom:11px;text-decoration:none;display:block}.shoeCardTop{display:grid;grid-template-columns:1fr 80px;gap:10px}.shoePic{background:#f0f0ed;border-radius:18px;display:grid;place-items:center;font-size:42px}.shoeCard h3{font-size:21px;margin:4px 0}.pill{display:inline-block;background:#eff0ec;border-radius:99px;padding:5px 8px;font-size:9px;font-weight:900;margin-top:8px}.tagcard{background:#111;color:#fff;border-radius:25px;padding:19px;margin-bottom:12px}.tagid{font-size:12px;color:#999;font-family:ui-monospace,monospace}.tagshoe{font-size:22px;font-weight:900;margin:8px 0}.tagstatus{display:inline-flex;align-items:center;gap:7px;color:#d8dad7;font-size:10px}.empty{padding:30px;text-align:center;color:#888}
+
+/* V1.0.1 - simple TOETAP shoe outline */
+.shoe-outline{width:74px;height:auto;display:block;color:currentColor}
+.hero .shoe-outline{width:128px;color:#fff}
+.shoePic .shoe-outline{width:54px;color:#111}
+
+/* V1.0.2 */
+.shoeShape{transform:none!important}
+.shoe-outline{transform:none!important}
+.hero .shoe-outline{width:138px}
+.shoePic .shoe-outline{width:58px}
+
+/* V1.0.3 — running sneaker icon */
+.shoe-outline{transform:rotate(0deg)!important;display:block}
+.hero .shoe-outline{width:145px}
+.shoePic .shoe-outline{width:62px}
+
+/* V1.0.4 sneaker correction */
+.shoe-outline{transform:none!important;vertical-align:middle}
+.hero .shoe-outline{width:150px;height:auto}
+.shoePic .shoe-outline{width:62px;height:auto}
+
+/* V1.0.5 — use supplied sneaker PNG directly */
+.shoe-outline{
+  display:block;
+  object-fit:contain;
+  transform:none!important;
+}
+.hero .shoe-outline{
+  width:150px;
+  height:auto;
+}
+.shoePic .shoe-outline{
+  width:62px;
+  height:auto;
+}
+
+/* V1.0.6 — supplied sneaker artwork, corrected for dark UI */
+img.shoe-outline{
+  display:block;
+  width:auto;
+  max-width:100%;
+  object-fit:contain;
+  transform:none!important;
+  filter:none!important;
+}
+.hero img.shoe-outline{width:150px;height:auto}
+.shoePic img.shoe-outline{width:62px;height:auto}
+
+/* ===== V1 COMPLETE ===== */
+.back{display:inline-flex;align-items:center;gap:6px;text-decoration:none;font-size:12px;font-weight:800;color:#6f7370}
+.topbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}
+.v1form,.v1panel{background:#fff;border:1px solid var(--line);border-radius:24px;padding:18px;margin:12px 0}
+.v1form label{display:block;font-size:9px;font-weight:900;letter-spacing:1px;color:#858985;margin:15px 0 7px}
+.v1form input,.v1form select{width:100%;border:1px solid #deded9;background:#f7f7f4;border-radius:14px;padding:13px 14px;font:inherit;color:#111;outline:none}
+.v1form input:focus,.v1form select:focus{border-color:#111}
+.formrow{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.btn{display:block;width:100%;border:0;border-radius:16px;background:#111;color:#fff;padding:14px 16px;text-align:center;text-decoration:none;font-size:11px;font-weight:900;letter-spacing:.6px;margin-top:12px;cursor:pointer}
+.btn.green{background:var(--green);color:#111}.btn.secondary{background:#fff;color:#111;border:1px solid #deded9}.btn.danger{color:#b42318}
+.notice{border-radius:15px;padding:12px 14px;background:#eff0ec;font-size:11px;margin:10px 0}.notice.warn{background:#fff1ef;color:#8f241c}
+.tiny{font-size:10px;color:#8a8e89}.muted{color:#7c807d;font-size:13px;line-height:1.55}
+.kv{display:flex;justify-content:space-between;gap:20px;padding:13px 0;border-bottom:1px solid #eee;font-size:12px}.kv:last-child{border-bottom:0}.kv span{color:#888}.kv b{text-align:right}
+.progress{height:6px;background:#ecece8;border-radius:99px;overflow:hidden;margin-top:14px}.fill{height:100%;background:var(--green)}
+.heroShoeV1{height:170px;background:#111;border-radius:28px;display:grid;place-items:center;margin:12px 0 18px}.heroShoeV1 img{width:170px;height:auto}
+.success{width:58px;height:58px;background:var(--green);border-radius:50%;display:grid;place-items:center;margin:5px auto 14px;font-size:25px;font-weight:900}
+.stepbar{display:flex;gap:6px;margin:8px 0 18px}.stepbar i{height:4px;flex:1;background:#ddd;border-radius:99px}.stepbar i.on{background:#111}
+.searchbox input{margin:0}.suggestions{overflow:hidden;border-radius:16px}.suggest{display:grid;grid-template-columns:42px 1fr;gap:10px;align-items:center;padding:11px;background:#f4f4f1;border-bottom:1px solid #e6e6e1;cursor:pointer}.suggest b,.suggest span{display:block;font-size:11px}.suggest span{color:#888;margin-top:3px}.brandmark{width:40px;height:40px;background:#111;color:#fff;border-radius:12px;display:grid;place-items:center;font-size:10px;font-weight:900}
+.metricGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin:12px 0}.metric{background:#fff;border:1px solid var(--line);border-radius:20px;padding:14px}.metric small{display:block;font-size:9px;color:#888;font-weight:900;letter-spacing:.7px}.metric b{display:block;font-size:18px;margin-top:5px}
+.chart{height:145px;display:flex;align-items:end;gap:8px;padding-top:12px}.barwrap{flex:1;height:130px;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:4px}.bar{width:100%;max-width:25px;background:#111;border-radius:8px 8px 3px 3px}.barlabel{font-size:8px;color:#888}
+.rank{display:grid;grid-template-columns:30px 1fr auto;gap:10px;align-items:center;padding:13px 0;border-bottom:1px solid #eee}.rank:last-child{border:0}.ranknum{width:28px;height:28px;border-radius:50%;background:#f0f0ed;display:grid;place-items:center;font-size:10px;font-weight:900}
+.insightRow{display:grid;grid-template-columns:42px 1fr;gap:11px;padding:13px 0;border-bottom:1px solid #eee}.insightRow:last-child{border:0}.insightIcon{width:40px;height:40px;border-radius:13px;background:var(--green);display:grid;place-items:center;font-weight:900}.insightRow b,.insightRow span{display:block}.insightRow span{font-size:11px;color:#777;line-height:1.45;margin-top:4px}
+.tagLink{display:block;text-decoration:none}.tagcard .tagstatus i{width:7px;height:7px;border-radius:50%;background:var(--green);display:inline-block}
+.stravaMark{font-size:44px;font-weight:1000;letter-spacing:-3px}.statusGood{display:inline-flex;gap:7px;align-items:center;font-size:10px;font-weight:900}.statusGood i{width:8px;height:8px;background:var(--green);border-radius:50%}
+@media(max-width:360px){.headline{font-size:36px}.formrow,.metricGrid{grid-template-columns:1fr}.hero h2{font-size:26px}}
+
+/* V1.4 onboarding */
+.onboarding{padding-bottom:40px}.onHero{padding:54px 0 28px}.onHero h1{font-size:clamp(42px,12vw,68px);line-height:.91;letter-spacing:-.055em;margin:12px 0 18px}.onHero p{font-size:16px;line-height:1.55;max-width:560px}.choice{border:1px solid #d8d8d2;border-radius:22px;padding:20px;margin:14px 0;background:#f7f7f1}.primaryChoice{background:#111;color:#fff;border-color:#111}.primaryChoice p{color:#b8b8b2}.choiceTop{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:19px}.pill{font-size:10px;letter-spacing:.1em;background:#c9ff54;color:#111;padding:7px 9px;border-radius:999px;font-weight:900}.choice .btn{margin-top:18px}
+
+.authPage{padding-bottom:42px}.authPage .v1form{margin-top:8px}.authPage a{font-weight:800;color:inherit}
+
+/* V2.2.20 — global loading feedback */
+.toetapLoader{position:fixed;inset:0;z-index:99999;background:rgba(244,244,238,.92);backdrop-filter:blur(8px);display:grid;place-items:center;padding:24px;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .16s ease,visibility .16s ease}
+.toetapLoader.show{opacity:1;visibility:visible;pointer-events:auto}
+.toetapLoaderCard{text-align:center;min-width:190px}
+.toetapLoaderBrand{font-size:18px;font-weight:1000;letter-spacing:4px;color:#111}.toetapLoaderBrand i{display:inline-block;width:7px;height:7px;border-radius:50%;background:#c9ff54;margin-left:3px}
+.toetapLoaderRing{width:48px;height:48px;border:5px solid #ddd;border-top-color:#111;border-radius:50%;margin:25px auto 16px;animation:toetapSpin .72s linear infinite}
+.toetapLoaderCard b,.toetapLoaderCard span{display:block}.toetapLoaderCard b{font-size:11px;letter-spacing:1.6px}.toetapLoaderCard span{font-size:10px;color:#858985;margin-top:6px}
+@keyframes toetapSpin{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.toetapLoaderRing{animation-duration:1.6s}}
+
+/* V2.2.25 — uploaded Home photo must bypass the legacy parent grayscale filter.
+   filter:none on the IMG cannot cancel filter:grayscale(1) applied to its parent. */
+.hero .shoeShape:has(img.custom-shoe-photo){
+  filter:none !important;
+}
+
+/* V2.2.27 — custom shoe image presentation */
+.hero .shoe.custom-photo-hero{position:relative;isolation:isolate;min-height:235px;display:flex;align-items:center;justify-content:center}
+.hero .shoe.custom-photo-hero::before{content:"";position:absolute;z-index:-1;left:50%;top:50%;transform:translate(-50%,-50%);width:min(86vw,430px);height:185px;border-radius:50%;background:radial-gradient(ellipse at center,rgba(255,255,255,.20) 0%,rgba(255,255,255,.105) 35%,rgba(255,255,255,0) 72%);filter:blur(7px);pointer-events:none}
+.hero .shoe.custom-photo-hero .shoeShape{width:100%!important;max-width:440px!important;height:220px!important;display:flex!important;align-items:center!important;justify-content:center!important;filter:none!important}
+.hero .shoe.custom-photo-hero img.custom-shoe-photo{width:94%!important;max-width:430px!important;height:215px!important;object-fit:contain!important;filter:none!important;-webkit-filter:none!important;opacity:1!important;mix-blend-mode:normal!important;transform:none!important}
