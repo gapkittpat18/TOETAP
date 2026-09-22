@@ -1,0 +1,28 @@
+TOETAP V1.3 — PRODUCT RENAME
+============================
+
+Product/UI name is now TOETAP.
+
+IMPORTANT: this package intentionally does NOT rename working technical identifiers yet:
+- Current local folder/route remains /tapsole/
+- Existing database remains tapsole_v0
+- Existing tables remain unchanged
+- Existing NFC tag IDs remain TSxxxxxx
+- Existing NFC URLs remain compatible
+- Existing Strava OAuth/webhook core remains compatible
+
+Why:
+Renaming those now would break already-written NFC tags, local routes, webhook callback configuration,
+database connections, and the proven Strava matching flow for no user benefit.
+
+For production, move to a stable TOETAP domain and opaque public NFC token in one controlled migration.
+
+Brand architecture:
+TOETAP = product/app/hardware brand
+Strava = primary/default run-data integration when connected
+No Strava = TOETAP still works with local/manual fallback
+
+Trademark/domain note:
+A quick web screening found existing uses of "ToeTap", including ToeTap Management and an unrelated
+ToeTap toe-controlled HID project. This is not a legal trademark clearance. Before commercial launch,
+perform formal trademark searches in target jurisdictions/classes and verify domain/app-store handles.
