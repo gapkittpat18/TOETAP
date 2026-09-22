@@ -1,0 +1,47 @@
+name: Deploy TOETAP to app.toetap.run
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: toetap-production
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+
+      - name: Deploy TOETAP by FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.TOETAP_FTP_SERVER }}
+          username: ${{ secrets.TOETAP_FTP_USERNAME }}
+          password: ${{ secrets.TOETAP_FTP_PASSWORD }}
+          protocol: ${{ secrets.TOETAP_FTP_PROTOCOL }}
+          port: ${{ secrets.TOETAP_FTP_PORT }}
+          local-dir: ./
+          server-dir: ${{ secrets.TOETAP_FTP_SERVER_DIR }}
+          dangerous-clean-slate: false
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            **/.env
+            **/.env.*
+            **/database.php
+            **/strava.php
+            **/config/database.php
+            **/config/strava.php
+            **/uploads/**
+            **/uploads/shoes/**
+            **/*.sql
+            README*
+            DEPLOY_SETUP.md
